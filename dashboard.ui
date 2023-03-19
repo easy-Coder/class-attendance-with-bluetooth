@@ -1,0 +1,1461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Class Attendance with bluetooth</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(212, 212, 212);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="Top_Bar">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>70</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>70</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(226, 226, 240);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_11">
+       <item>
+        <widget class="QLabel" name="label_12">
+         <property name="font">
+          <font>
+           <pointsize>24</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Class Attendance with Bluetooth and Python</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="Content">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="side_menu_bar">
+         <property name="minimumSize">
+          <size>
+           <width>140</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>140</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(237, 237, 252);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QPushButton" name="btn_create_lecturer">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>20</y>
+            <width>141</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>140</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(156, 161, 255);
+	border: 0px solid;
+}
+
+QPushButton:hover {
+	
+	background-color: rgb(34, 50, 226);
+}</string>
+          </property>
+          <property name="text">
+           <string>Create Lecturer</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btn_create_student">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>80</y>
+            <width>141</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>140</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(156, 161, 255);
+	border: 0px solid;
+}
+
+QPushButton:hover {
+	
+	background-color: rgb(34, 50, 226);
+}</string>
+          </property>
+          <property name="text">
+           <string>Create Student</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btn_create_course">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>140</y>
+            <width>141</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>140</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(156, 161, 255);
+	border: 0px solid;
+}
+
+QPushButton:hover {
+	
+	background-color: rgb(34, 50, 226);
+}</string>
+          </property>
+          <property name="text">
+           <string>Create Course</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btn_back">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>600</y>
+            <width>141</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>140</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(156, 161, 255);
+	border: 0px solid;
+}
+
+QPushButton:hover {
+	
+	background-color: rgb(34, 50, 226);
+}</string>
+          </property>
+          <property name="text">
+           <string>Back</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="main_content">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QStackedWidget" name="pages">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="create_lecturer_page">
+             <widget class="QFrame" name="frame">
+              <property name="geometry">
+               <rect>
+                <x>-1</x>
+                <y>-1</y>
+                <width>861</width>
+                <height>651</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>861</width>
+                <height>651</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_12">
+               <item>
+                <widget class="QLabel" name="label">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>70</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>18</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Create Lecturer</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_13">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_13">
+                  <item>
+                   <widget class="QFrame" name="frame_14">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_2">
+                     <item>
+                      <widget class="QFrame" name="frame_16">
+                       <property name="frameShape">
+                        <enum>QFrame::Box</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_14">
+                        <item>
+                         <widget class="QFrame" name="frame_17">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_6">
+                           <item>
+                            <widget class="QFrame" name="frame_19">
+                             <property name="frameShape">
+                              <enum>QFrame::StyledPanel</enum>
+                             </property>
+                             <property name="frameShadow">
+                              <enum>QFrame::Raised</enum>
+                             </property>
+                             <layout class="QVBoxLayout" name="verticalLayout_16">
+                              <item>
+                               <layout class="QVBoxLayout" name="verticalLayout_15">
+                                <item>
+                                 <layout class="QHBoxLayout" name="horizontalLayout_10">
+                                  <item>
+                                   <widget class="QLabel" name="label_2">
+                                    <property name="font">
+                                     <font>
+                                      <pointsize>10</pointsize>
+                                     </font>
+                                    </property>
+                                    <property name="text">
+                                     <string>First Name:</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QLineEdit" name="lec_fname_edit">
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>300</width>
+                                      <height>40</height>
+                                     </size>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                 </layout>
+                                </item>
+                                <item>
+                                 <layout class="QHBoxLayout" name="horizontalLayout_11">
+                                  <item>
+                                   <widget class="QLabel" name="label_6">
+                                    <property name="font">
+                                     <font>
+                                      <pointsize>10</pointsize>
+                                     </font>
+                                    </property>
+                                    <property name="text">
+                                     <string>Second Name:</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QLineEdit" name="lec_sname_edit">
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>300</width>
+                                      <height>40</height>
+                                     </size>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                 </layout>
+                                </item>
+                                <item>
+                                 <layout class="QHBoxLayout" name="horizontalLayout_12">
+                                  <item>
+                                   <widget class="QLabel" name="label_13">
+                                    <property name="font">
+                                     <font>
+                                      <pointsize>10</pointsize>
+                                     </font>
+                                    </property>
+                                    <property name="text">
+                                     <string>Department:</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QLineEdit" name="lec_depart_edit">
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>300</width>
+                                      <height>40</height>
+                                     </size>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                 </layout>
+                                </item>
+                                <item>
+                                 <layout class="QHBoxLayout" name="horizontalLayout_13">
+                                  <item>
+                                   <widget class="QLabel" name="label_14">
+                                    <property name="font">
+                                     <font>
+                                      <pointsize>10</pointsize>
+                                     </font>
+                                    </property>
+                                    <property name="text">
+                                     <string>Password:</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QLineEdit" name="lec_password">
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>300</width>
+                                      <height>40</height>
+                                     </size>
+                                    </property>
+                                    <property name="echoMode">
+                                     <enum>QLineEdit::Password</enum>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                 </layout>
+                                </item>
+                               </layout>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="btn_add_lecturer">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>140</width>
+                                  <height>50</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>140</width>
+                                  <height>50</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(156, 161, 255);
+	border: 0px solid;
+}
+
+QPushButton:hover {
+	
+	background-color: rgb(34, 50, 226);
+}</string>
+                                </property>
+                                <property name="text">
+                                 <string>Create</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QFrame" name="frame_18">
+                             <property name="minimumSize">
+                              <size>
+                               <width>255</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>255</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="frameShape">
+                              <enum>QFrame::StyledPanel</enum>
+                             </property>
+                             <property name="frameShadow">
+                              <enum>QFrame::Raised</enum>
+                             </property>
+                             <widget class="QLabel" name="lecturer_err">
+                              <property name="geometry">
+                               <rect>
+                                <x>10</x>
+                                <y>10</y>
+                                <width>241</width>
+                                <height>61</height>
+                               </rect>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">color: red;</string>
+                              </property>
+                              <property name="text">
+                               <string/>
+                              </property>
+                              <property name="wordWrap">
+                               <bool>true</bool>
+                              </property>
+                             </widget>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_15">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>70</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>70</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(28, 39, 186);</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="create_student_page">
+             <widget class="QFrame" name="frame_2">
+              <property name="geometry">
+               <rect>
+                <x>-1</x>
+                <y>-1</y>
+                <width>872</width>
+                <height>662</height>
+               </rect>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_3">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="label_3">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>70</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>70</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>18</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Create Student</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_4">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>592</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>592</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_4">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QFrame" name="frame_5">
+                    <property name="minimumSize">
+                     <size>
+                      <width>870</width>
+                      <height>520</height>
+                     </size>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_3">
+                     <item>
+                      <widget class="QFrame" name="frame_7">
+                       <property name="minimumSize">
+                        <size>
+                         <width>432</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>432</width>
+                         <height>500</height>
+                        </size>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_6">
+                        <item>
+                         <widget class="QFrame" name="frame_10">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>40</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>40</height>
+                           </size>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <widget class="QLabel" name="label_11">
+                           <property name="geometry">
+                            <rect>
+                             <x>10</x>
+                             <y>10</y>
+                             <width>391</width>
+                             <height>20</height>
+                            </rect>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">color: rgb(255, 0, 0);</string>
+                           </property>
+                           <property name="text">
+                            <string>*Note: All fields are required</string>
+                           </property>
+                          </widget>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_9">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>50</height>
+                           </size>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_7">
+                           <property name="leftMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="topMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="bottomMargin">
+                            <number>0</number>
+                           </property>
+                           <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_9">
+                             <item>
+                              <widget class="QLabel" name="label_4">
+                               <property name="text">
+                                <string>Matric No:</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QLineEdit" name="stu_matric_edit">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>300</width>
+                                 <height>40</height>
+                                </size>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                           <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_8">
+                             <item>
+                              <widget class="QLabel" name="label_5">
+                               <property name="text">
+                                <string>First Name:</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QLineEdit" name="stu_fname_edit">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>300</width>
+                                 <height>40</height>
+                                </size>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                           <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_7">
+                             <item>
+                              <widget class="QLabel" name="label_8">
+                               <property name="text">
+                                <string>Second Name:</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QLineEdit" name="stu_sname_edit">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>300</width>
+                                 <height>40</height>
+                                </size>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                           <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_5">
+                             <item>
+                              <widget class="QLabel" name="label_9">
+                               <property name="text">
+                                <string>Department:</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QLineEdit" name="stu_depart_edit">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>300</width>
+                                 <height>40</height>
+                                </size>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                           <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_4">
+                             <item>
+                              <widget class="QLabel" name="label_10">
+                               <property name="text">
+                                <string>Bluetooth Id:</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QLineEdit" name="stu_blt_id_edit">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>300</width>
+                                 <height>40</height>
+                                </size>
+                               </property>
+                               <property name="readOnly">
+                                <bool>true</bool>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                           <item>
+                            <widget class="QFrame" name="frame_11">
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>62</height>
+                              </size>
+                             </property>
+                             <property name="frameShape">
+                              <enum>QFrame::StyledPanel</enum>
+                             </property>
+                             <property name="frameShadow">
+                              <enum>QFrame::Raised</enum>
+                             </property>
+                             <layout class="QVBoxLayout" name="verticalLayout_10">
+                              <item>
+                               <widget class="QLabel" name="student_err">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>0</width>
+                                  <height>50</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">color: red;</string>
+                                </property>
+                                <property name="text">
+                                 <string/>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QFrame" name="frame_12">
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>70</height>
+                              </size>
+                             </property>
+                             <property name="frameShape">
+                              <enum>QFrame::StyledPanel</enum>
+                             </property>
+                             <property name="frameShadow">
+                              <enum>QFrame::Raised</enum>
+                             </property>
+                             <layout class="QVBoxLayout" name="verticalLayout_8">
+                              <property name="leftMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="topMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="rightMargin">
+                               <number>0</number>
+                              </property>
+                              <property name="bottomMargin">
+                               <number>0</number>
+                              </property>
+                              <item>
+                               <widget class="QPushButton" name="btn_add_student">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>120</width>
+                                  <height>50</height>
+                                 </size>
+                                </property>
+                                <property name="styleSheet">
+                                 <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(156, 161, 255);
+	border: 0px solid;
+}
+
+QPushButton:hover {
+	
+	background-color: rgb(34, 50, 226);
+}</string>
+                                </property>
+                                <property name="text">
+                                 <string>Create Student</string>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QFrame" name="frame_8">
+                       <property name="minimumSize">
+                        <size>
+                         <width>412</width>
+                         <height>500</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>432</width>
+                         <height>500</height>
+                        </size>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_5">
+                        <property name="spacing">
+                         <number>4</number>
+                        </property>
+                        <item>
+                         <widget class="QTextBrowser" name="textBrowser">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>45</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>45</height>
+                           </size>
+                          </property>
+                          <property name="html">
+                           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:10pt; font-weight:696; color:#ff0000;&quot;&gt;*Note&lt;/span&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:9pt;&quot;&gt;: Scan for device and choose student device name before creating the student.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QListView" name="blt_device_list">
+                          <property name="minimumSize">
+                           <size>
+                            <width>330</width>
+                            <height>375</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>375</height>
+                           </size>
+                          </property>
+                          <property name="viewMode">
+                           <enum>QListView::ListMode</enum>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="btn_scan_btl">
+                          <property name="minimumSize">
+                           <size>
+                            <width>120</width>
+                            <height>50</height>
+                           </size>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 115, 0);
+	border: 0px solid;
+}
+
+QPushButton:hover {
+	background-color: rgb(0, 170, 0);
+}</string>
+                          </property>
+                          <property name="text">
+                           <string>Scan for Device</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_6">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>70</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>70</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(28, 39, 186);</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="create_course_page">
+             <widget class="QFrame" name="frame_3">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>870</width>
+                <height>660</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>870</width>
+                <height>660</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_9">
+               <item>
+                <widget class="QLabel" name="label_7">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>70</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>70</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>18</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Create Course</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_20">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_14">
+                  <item>
+                   <widget class="QFrame" name="frame_22">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_18">
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_17">
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_17">
+                         <item>
+                          <widget class="QLabel" name="label_15">
+                           <property name="font">
+                            <font>
+                             <pointsize>10</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>Course Code:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLineEdit" name="course_code_edit">
+                           <property name="minimumSize">
+                            <size>
+                             <width>300</width>
+                             <height>40</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>16777215</width>
+                             <height>40</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_16">
+                         <item>
+                          <widget class="QLabel" name="label_16">
+                           <property name="font">
+                            <font>
+                             <pointsize>10</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>Course Title:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLineEdit" name="course_title_edit">
+                           <property name="minimumSize">
+                            <size>
+                             <width>300</width>
+                             <height>40</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>16777215</width>
+                             <height>40</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_15">
+                         <item>
+                          <widget class="QLabel" name="label_17">
+                           <property name="font">
+                            <font>
+                             <pointsize>10</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>Lecturer In Charge:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QComboBox" name="course_lec_combox">
+                           <property name="minimumSize">
+                            <size>
+                             <width>300</width>
+                             <height>40</height>
+                            </size>
+                           </property>
+                           <item>
+                            <property name="text">
+                             <string>Lecturer 1</string>
+                            </property>
+                           </item>
+                           <item>
+                            <property name="text">
+                             <string>Lecturer 2</string>
+                            </property>
+                           </item>
+                           <item>
+                            <property name="text">
+                             <string>Lecturer 3</string>
+                            </property>
+                           </item>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="btn_add_course">
+                       <property name="minimumSize">
+                        <size>
+                         <width>140</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>140</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(156, 161, 255);
+	border: 0px solid;
+}
+
+QPushButton:hover {
+	
+	background-color: rgb(34, 50, 226);
+}</string>
+                       </property>
+                       <property name="text">
+                        <string>Create Course</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_23">
+                    <property name="minimumSize">
+                     <size>
+                      <width>290</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>290</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <widget class="QLabel" name="course_err">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>10</y>
+                       <width>101</width>
+                       <height>21</height>
+                      </rect>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">color: red;</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_21">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>70</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>70</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(28, 39, 186);</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
